@@ -1,0 +1,27 @@
+/*登录页的样式*/
+
+#loginCard {
+    border: #ff6428 2px solid;
+    margin: 4% 40%;
+    width: 23%;
+    background-color: #dfc1a7;
+}
+
+#loginLog {
+    margin: 25%;
+}
+
+#name, #password,#passwordcom,#sub_btn {
+    width: 90%;
+    line-height: 22px;
+    margin: 5%;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+#sub_btn {
+    background-color: #d6a275;
+    border: rgb(242, 242, 242);
+    color: #f2f2f2;
+}

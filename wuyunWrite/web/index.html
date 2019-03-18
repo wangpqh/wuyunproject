@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>乌云写作 | 首页</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/headmain.png">
+</head>
+<body>
+<div class="header">
+    <div id="logImg">
+        <a id="index" href="index.html"><img id="logo" src="img/headmain.png">乌云写作</a></div>
+    <div id="logRe">
+        <a href="writerInfo.html">个人信息</a>
+        <a href="login.html" id="login">登录</a>&nbsp;<label style="color:white;">/</label>&nbsp;<a
+            href="register.html" id="register">注册</a></div>
+</div>
+<div class="content">
+    <div id="titleShow">
+        <div id="book_title"><input type="text" placeholder="《这里是书题》" style="width: 93%;height: 30px;"></div>
+        <div id="artical_title">第一章 <input type="text" placeholder="章节题" style="width: 52%;height: 26px;"></div>
+        <div id="new_artical"></div>
+        <div>
+            <input type="button" id="add_artical" value="+" title="新建章节" onclick="add_artical()"><input type="button" id="plus_artical" onclick="delete_artical()" value="-" title="删除章节">
+        </div>
+        <div id="signLog">文字栏，显示作者签名......<br>显示作者签名........<br>显示作者签名......</div>
+    </div>
+    <div id="mainBody">
+        <div id="artivalHead"><input id="save" type="button" value="保存">
+            <input id="preview" type="button" value="预览"><lable id="this_time">&nbsp;|&nbsp;时间显示</lable>
+        </div>
+        <div id="artical"><p id="articalBody">这里是文章正文，你可以登录后进行写作。还在修改之中。。。<br>这里是文章正文，你可以登录后进行写作。还在修改之中。。。<br>这里是文章正文，你可以登录后进行写作。还在修改之中。。。<br>
+        </p></div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
