@@ -61,7 +61,7 @@ html,body{
      font-size: 20px;
     color: #ff6428;
  }
-#add_artical{
+#add_articalm,#add_work{
     float: left;
     width:50%;
     border:#0c0f1ce0 1px solid;
@@ -69,6 +69,9 @@ html,body{
     font-size: 22px;
     margin-left: 1px;
     cursor: pointer;
+}
+#add_articalm,#add_work:hover{
+    background-color: #DCDCDC;
 }
 
 #plus_artical{

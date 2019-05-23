@@ -1,21 +1,28 @@
 $(function () {
 
-
 });
+
 function login(){
+    var name=$("#name").val();
+    var pass=$("#password").val();
+    if(pass===""){
+        alert("密码不能为空！");
+    }
     $.ajax({
         type:'post',
         data:{
-            name:$("#name").val(),
-            password:$("#password").val()
+            username:name,
+            password:pass
         },
+        dataType:"json",
         url:"user/login",
-        sucess:function (data) {
-            var obj = eval('(' + data + ')');
-            alert(obj.success);
+        success:function (data) {
+           alert("登录成功");
+            window.open("writerInfo.html","_self");
+
         },
-        error:function () {
-            alert("登录失败！");
+        error:function (data) {
+            alert(data);
         }
 
     })
@@ -44,6 +51,5 @@ function register(){
     else {
         alert("密码与确认密码不符");
     }
-
 
 }

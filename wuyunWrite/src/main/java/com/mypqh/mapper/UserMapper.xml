@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//En"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mypqh.mapper.UserMapper">
+    <select id="selectForLogin" parameterType="String" resultType="User">
+        SELECT * FROM t_user_login WHERE userid=#{username} AND password=#{password};
+    </select>
+    <insert id="registerInsert" parameterType="User">
+        INSERT  INTO t_user_login(userid,password,loginStat) VALUES (#{usernamme},#{password},#{loginStat})
+    </insert>
+</mapper>

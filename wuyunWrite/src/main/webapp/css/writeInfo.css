@@ -34,9 +34,14 @@ li:hover {
 
 #modify {
     float: right;
-    margin: 5px;
+    margin: 5px 75px 5px 5px;
+    font-size: 20px;
 }
-
+#saveBtn{
+    float: right;
+    margin:5px -120px 5px 5px;
+    font-size: 20px;
+}
 #head {
     width: 15%;
     height: 60px;
@@ -44,6 +49,7 @@ li:hover {
     margin-left: 10px;
     float: left;
     /*border: #ff6428 1px solid;*/
+    cursor: pointer;
 }
 
 /*头像*/
@@ -96,4 +102,10 @@ textarea {
     height: 186px;
     float: left;
     margin-left:20px;
+}
+#addNew{
+    text-decoration: none;
+    color: #ff6428;
+    margin: 70px;
+    display: table;
 }

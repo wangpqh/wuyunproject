@@ -18,7 +18,13 @@ function add_artical() {
 
 }
 
-function delete_artical() {      //提示删除
+function delete_artical() {      //提示删除,根据文章标题后台删除
     alert("真的要删除吗？");
-    document.getElementById("artical_title")
+    document.getElementById("artical_title").remove();
+    $.ajax({
+        type:'post',
+        data:{
+           articalTitle:$("#artical_title").val()
+        },
+    });
 }

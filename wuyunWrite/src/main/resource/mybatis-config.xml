@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org/DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration >
+    <!--<settings>-->
+        <!--&lt;!&ndash;驼峰属性名设置&ndash;&gt;-->
+        <!--<setting name="mapUderscoreToCamelCase" value="true"/>-->
+    <!--</settings>-->
+    <typeAliases>
+        <typeAlias type="com.mypqh.bean.User" alias="User"/>
+        <typeAlias type="com.mypqh.bean.UserInfo" alias="UserInfo"/>
+    </typeAliases>
+</configuration>

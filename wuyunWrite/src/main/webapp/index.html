@@ -17,16 +17,20 @@
 </div>
 <div class="content">
     <div id="titleShow">
-        <div id="book_title"><input type="text" placeholder="《这里是书题》" style="width: 93%;height: 30px;"></div>
-        <div id="artical_title">第一章 <input type="text" placeholder="章节题" style="width: 52%;height: 26px;"></div>
+        <div><input type="button" id="add_work" value="+" title="新建作品" onclick="add_work()"></div>
+        <div id="book_title" style="display: none;"><input type="text" placeholder="《这里是书题》" style="width: 93%;height: 30px;"></div>
+        <div id="artical_title" style="display: none;">>第一章 <input type="text" placeholder="章节题" style="width: 52%;height: 26px;"></div>
         <div id="new_artical"></div>
-        <div>
+        <div style="display: none;">>
             <input type="button" id="add_artical" value="+" title="新建章节" onclick="add_artical()"><input type="button" id="plus_artical" onclick="delete_artical()" value="-" title="删除章节">
         </div>
         <div id="signLog">文字栏，显示作者签名......<br>显示作者签名........<br>显示作者签名......</div>
     </div>
     <div id="mainBody">
-        <div id="artivalHead"><input id="save" type="button" value="保存">
+
+        <div id="artivalHead">
+            <div style="float: left; display: none;"><lable>第X章</lable>&nbsp;|&nbsp;<lable>文章题</lable></div>
+            <input id="save" type="button" value="保存">
             <input id="preview" type="button" value="预览"><lable id="this_time">&nbsp;|&nbsp;时间显示</lable>
         </div>
         <div id="artical"><p id="articalBody">这里是文章正文，你可以登录后进行写作。还在修改之中。。。<br>这里是文章正文，你可以登录后进行写作。还在修改之中。。。<br>这里是文章正文，你可以登录后进行写作。还在修改之中。。。<br>
